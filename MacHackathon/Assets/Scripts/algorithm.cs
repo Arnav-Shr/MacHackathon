@@ -90,20 +90,20 @@ public class algorithm : MonoBehaviour
             counterPlus += 1;
         }
         Debug.Log(counterPlus);
-        Debug.Log("now minus");
-        DateTime TempDateMinus = Date;
-        //counting backward
-        while ((int) TempDateMinus.DayOfWeek != 5){
-            TempDatePlus = new DateTime(TempDatePlus.Year, TempDatePlus.Month, TempDatePlus.Day - 1);
-            counterMinus += 1;
-            Debug.Log(counterMinus);
-        }
-
-        if (counterMinus > counterPlus){
+        //Debug.Log("now minus");
+        //DateTime TempDateMinus = Date;
+        ////counting backward
+        //while ((int) TempDateMinus.DayOfWeek != 5){
+        //    TempDatePlus = new DateTime(TempDatePlus.Year, TempDatePlus.Month, TempDatePlus.Day - 1);
+        //    counterMinus += 1;
+        //    Debug.Log(counterMinus);
+        //}
+//
+        //if (counterMinus > counterPlus){
             return TempDatePlus;
-        } 
-        else {
-            return TempDateMinus;
-        }     
+        //} 
+        //else {
+        //    return TempDateMinus;
+        //}     
     }
 }
